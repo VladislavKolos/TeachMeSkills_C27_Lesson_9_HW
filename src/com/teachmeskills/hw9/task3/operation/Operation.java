@@ -1,29 +1,8 @@
-package com.teachmeskills.hw9.task3.runner;
+package com.teachmeskills.hw9.task3.operation;
 
-import com.teachmeskills.hw9.task3.card.BaseCard;
-import com.teachmeskills.hw9.task3.card.BelCard;
-import com.teachmeskills.hw9.task3.card.MasterCard;
-import com.teachmeskills.hw9.task3.card.VisaCard;
-import com.teachmeskills.hw9.task3.card.itransfer.ITransfer;
-import com.teachmeskills.hw9.task3.client.Client;
-import com.teachmeskills.hw9.task3.fabric.TransferFabric;
-import com.teachmeskills.hw9.task3.util.Const;
-
-import java.util.Scanner;
-
-/**
- * Class with method main to run the program
- * contains one class object
- * contains 3 objects of the classes BelCard, MasterCard, VisaCard
- * The client's first and last name are set using a setters
- * The card number and CVV are set using a setters
- * contains a sorted array cards of type BaseCard to display the number of cards on the screen
- * enter from the console card number, CVV, first name, last name and transfer amount
- * methods are called in this class.
- */
-public class Runner {
-    public static void main(String[] args) {
-
+public class Operation {
+    public static void operation(String cardNumber, int cvv, String firstName, String lastName, double commission) {
+        /*
         Client client = new Client();
         client.setFirstName("Vladislav");
         client.setLastName("Kolos");
@@ -47,18 +26,7 @@ public class Runner {
             quantity++;
         }
 
-        double commission = 0;
-        System.out.println("Enter data for transfer: ");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter card number: ");
-        String cardNumber = scanner.nextLine();
-        System.out.println("Enter CVV: ");
-        int cvv = scanner.nextInt();
-        System.out.println("Enter first name: ");
-        String firstName = scanner.next();
-        System.out.println("Enter last name: ");
-        String lastName = scanner.next();
-
         if (cardNumber.equals(belCard.getCardNumber()) && cvv == masterCard.getCvv() && firstName.equals(client.getFirstName()) && lastName.equals(client.getLastName())) {
             System.out.println("Enter the amount to be transferred (BYN): ");
             double transferAmount = scanner.nextDouble();
@@ -110,6 +78,8 @@ public class Runner {
         } else {
             System.out.println("Incorrect data. re-Enter");
         }
-        scanner.close();
+    }
+}
+*/
     }
 }
